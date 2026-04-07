@@ -22,10 +22,8 @@ const Card = () => {
             loopcards.map((card) => (
                 <div
                 key={card.id} className='relative group w-full min-w-[250px] max-w-[250px] md:max-w-[250px] md:min-w-[668px] lg:max-w-[668px] lg:min-w-[930px] h-[500px] '>
-                    <img src={card.img} width={'950px'} className='hidden md:block object-cover ' />
-                    <div className='absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/80 to-transparent'>
-
-                    </div>
+                    <img src={card.img} className='h-full hidden md:block object-cover ' />
+                    
                     
                    <div className=' md:hidden min-w-[250px] max-w-[250px] h-[500px]'>
 
@@ -37,6 +35,9 @@ const Card = () => {
                     <img src={card.logo} />
 
                 </div>
+                <div className='absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/80 to-transparent'>
+
+                    </div>
            
         <div className='absolute bottom-8 md:left-10 left-1/2 -translate-x-1/2 transform md:-translate-x-0 md:transform-none text-white w-full'>
             <ul className='flex flex-col-reverse md:flex-row md:gap-2 lg:text-lg items-center '>
